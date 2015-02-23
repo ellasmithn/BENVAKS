@@ -20,7 +20,7 @@ body {
 	font-size: 1.0em;
 	
 	
-		/*background-color: #112360;*/ /*blue #1e3583*/
+		/*background-color: #778899;*/ /*black #03050d*/
 }
 
 h3 {
@@ -42,7 +42,8 @@ h2 {
 	font-weight: bold;
 	font-size: 1.15em;
 	line-height: 2em;
-	color: #ffffff;
+	color:  #000000;
+; /*black*/
 	padding-left: 3px;
 } 
 
@@ -70,8 +71,8 @@ button, input {
 
 fieldset {
 	width: 80%;
-	border: 2px solid #33cccc; /*aqua*/
-	color: #33cccc; /*aqua*/
+	border: 2px solid #B0C4DE; /*LightSteelBlue*/
+	color: #B0C4DE; /*LightSteelBlue*/
 	margin: 0 auto; /*center*/	
 	
 	/*Rounded Corners*/
@@ -100,7 +101,7 @@ input {
 	width: 100%;
 	min-width: 925px; /*Header wraps at less*/
 	margin: 0 auto; /*center*/
-	background-color: #112360; /*blue #1e3583*/
+	background-color: #778899; /*black #03050d*/
 
 	/*For sticking Footer to bottom of page*/
 	min-height: 100%;
@@ -116,7 +117,7 @@ input {
 
 /*==================HEADER AREA===================*/
 #header {
-	background: #339999 url('../images/multibar.png') repeat-x;
+	background:#778899  ;
 	height: 160px;
 	border-bottom: 2px solid #e68002; /*orange*/
 }
@@ -259,17 +260,18 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/gradie
 }
 
 #box1 {
-	border-top: 10px solid #33cccc; /*aqua*/
+	border-top: 10px solid #01793b; /*aqua*/
 	background-color: #e68002; /*orange*/
 }
 #box2 {
-	border-top: 10px solid #1e3583; /*blue*/
-	background-color: #33cccc; /*aqua*/
+	border-top: 10px solid #e68002; /*orange*/
+	background-color: #3b68ff; /*lt blue*/
+
 
 }
 #box3 {
-	border-top: 10px solid #e68002; /*orange*/
-	background-color: #3b68ff; /*lt blue*/
+	border-top: 10px solid #1e3583; /*blue*/
+	background-color: #990000; /*aqua*/
 	/*background-color: #01793b;*/ /*green*/
 }
 
@@ -407,7 +409,7 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/gradie
 	background-color: #e68002; /*orange*/
 }
 #mainArea #box2 {
-	border-top: 10px solid #1e3583; /*blue*/
+	border-top: 10px solid #1e3583; /*grey*/
 	background-color: #33cccc; /*aqua*/
 
 }
@@ -799,7 +801,7 @@ fieldset#groupSurveyBox {
 
 #footer {
 	clear: both;
-	background-color: #339999; /*aqua-gray*/
+	background-color: #01793b/*green*/
 	width: 100%;
 	
 	border-top: 7px solid #e68002; /*orange*/
