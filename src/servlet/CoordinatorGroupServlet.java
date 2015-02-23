@@ -86,9 +86,11 @@ public class CoordinatorGroupServlet extends HttpServlet {
         		//Read in Form Data & cleanup - get Group ID
 	            String groupID = cleanupString(request.getParameter("groupid"));
 	            
+	            System.out.println(groupID);
 	            
-	            HttpSession ses1 = request.getSession();
-	            ses1.setAttribute("groupID", groupID);
+	            
+	            HttpSession ss1 = request.getSession();
+	            ss1.setAttribute("groupID", groupID);
 	            
 	            //Get Group object from lookup by group id
 	            GroupsDAO gd = new GroupsDAO();

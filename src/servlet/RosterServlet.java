@@ -43,29 +43,39 @@ public class RosterServlet extends HttpServlet {
 
         try {
         	
-        	HttpSession ses1 = request.getSession();
-        	int groupid = Integer.parseInt((String) ses1.getAttribute("groupID"));
+        	System.out.println("In the servlet");
+        	
+        	HttpSession ss1 = request.getSession();
+        	int groupid = Integer.parseInt((String)ss1.getAttribute("groupID"));
+        	System.out.println(groupid);
         	String fName;
         	String lName;
         	String dob;
         	double gpa;
         	int count = 1;
-        	while(!(fName= request.getParameter("input"+count)).equals("")){
+        	
+        	System.out.println("after the declaration");
+        	while(!(fName= request.getParameter("input"+count )).equals(""))
+        	{
         		 fName = (request.getParameter("input"+count));
         		 String newfName = fName.substring(0, 1).toUpperCase() + fName.substring(1);	
+        		 System.out.println(newfName);
         		 count ++;
             	 lName = (request.getParameter("input"+count));
             	 String newlName = lName.substring(0, 1).toUpperCase() + lName.substring(1);
+            	 System.out.println(newlName);
             	 count ++;
             	 dob = (request.getParameter("input"+count));
+            	 System.out.println(dob);
             	 count ++;
             	 gpa = (Double.parseDouble(request.getParameter("input"+count)));
+            	 System.out.println(gpa);
             	 count ++;
             	CoordinatorDAO dao = new CoordinatorDAO();
         		dao.rosterinsert(newfName,newlName,dob,gpa,groupid);
         		System.out.println(count + fName);
         		if ((fName= request.getParameter("input"+count)).equals("")) break;
-        		}
+        	}
         
         
         	
