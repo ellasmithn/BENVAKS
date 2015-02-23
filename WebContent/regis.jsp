@@ -149,13 +149,17 @@ if (session.getAttribute("adm2") == null) {
 		<label id="userid">Userid:</label>
 		<input type="text" name="userid" value="">
 	</div>
+	
+	<%//The password type has been changed to password By Benjamin %>
+	
 	<div>
 		<label id="password">Password:</label>
-		<input type="text" name="password" value="">
+		<input type="password" name="password" value="">
 	</div>
+	
 	<div>
 		<label id="password2">Confirm Password:</label>
-		<input type="text" name="password2" value="">
+		<input type="password" name="password2" value="">
 	</div>
 	
 <%
